@@ -4,7 +4,7 @@ export default class Header extends Component {
 	constructor() {
 		super();
 		this.state = {
-			name: 'Joe'
+			name: 'Leon'
 		};
 	}
 	render() {
