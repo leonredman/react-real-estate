@@ -10,7 +10,6 @@ export default class Header extends Component {
 	render() {
 		return (
 			<section id="listings">
-				Listings>
 				<section className="search-area">
 					<input type="text" name="search" />
 				</section>
@@ -30,22 +29,29 @@ export default class Header extends Component {
 				<section className="listings-results">
 					<div className="listing">
 						<div className="listing-img">
-							<span className="Address">Address</span>
+							<span className="address">23 Dexi Hills</span>
 							<div className="details">
-								<div className="user-img"> </div>
-								<div className="user-details">
-									<span className="user-name">Nina Smith</span>
-									<span className="post-date">05/05/2017</span>
+								<div className="col-md-3">
+									<div className="user-img"> </div>
 								</div>
-								<div className="listing-details">
-									<div className="floor-space">
-										<i className="fa fa-square-o" aria-hidden="true" />
+
+								<div className="col-md-9">
+									<div className="user-details">
+										<span className="user-name">Nina Smith</span>
+										<span className="post-date">05/05/2017</span>
 									</div>
-									<span> 1000 ft&sup2;</span>
-								</div>
-								<div className="bedrooms">
-									<i className="fa fa-bed" aria-hidden="true" />
-									<span>3 bedrooms</span>
+									<div className="listing-details">
+										<div className="floor-space">
+											<i className="fa fa-square-o" aria-hidden="true" />
+											<span> 1000 ft&sup2;</span>
+										</div>
+										<div className="bedrooms">
+											<i className="fa fa-bed" aria-hidden="true" />
+											<span>3 bedrooms</span>
+										</div>
+									</div>
+
+									<div className="view-btn">view listing</div>
 								</div>
 							</div>
 						</div>
@@ -53,8 +59,8 @@ export default class Header extends Component {
 						<div className="bottom-info">
 							<span>$1000 / month </span>
 							<span>
-								<i className="fa fa-map-maker" aria-hiddeb="true" /> Ridgwood,
-								NYv
+								<i className="fa fa-map-maker" aria-hidden="true" /> Ridgwood,
+								NY
 							</span>
 						</div>
 					</div>
