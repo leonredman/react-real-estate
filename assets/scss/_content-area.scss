@@ -1,7 +1,6 @@
   #content-area{
     overflow: auto;
     width: 100%;
-    background:black;
     min-height: 100vh;
   }
 
@@ -82,8 +81,9 @@
           background: transparent;
           font-size: 2rem;
           border: none;
-          border-bottom: 2px solid $lightgrey;
+          border-bottom: 2px solid $darkgrey;
           margin-botom: 20px;
+          font-weight:100;
           color: $lightgrey;
         }
       }
@@ -92,7 +92,7 @@
         margin-bottom: 20px;
 
         .results{
-          color: $lightgrey;
+          color: $darkgrey;
           font-size: 0.8rem;
           display:inline-block;
         }
@@ -128,7 +128,6 @@
 
       .listing{
         background:#fff;
-        width: 33.33%;
         border-radius: 5px;
         -webkit-box-shadow: 0 9px 54px -4px rgba(224,224,224,1);
         -moz-box-shadow: 0 9px 54px -4px rgba(224,224,224,1);
@@ -160,15 +159,14 @@
           opacity:0;
           }
         }
-        .address{
+        .address {
           position: absolute;
           bottom: 20px;
           opacity: 1;
           transition: all .4s ease-in-out;
-
         }
 
-        .details{
+        .details {
           transition: all .4s ease-in-out;
           opacity: 0;
           width: 100%;
@@ -246,9 +244,31 @@
                 margin-bottom: 10px;
 
               }
+            }
+          }
+        }
+
+              .bottom-info {
+                padding: 20px 15px;
+                .price {
+                  font-size: 1rem;
+                  display:block;
+                  margin-bottom: 10px;
+                  color:$darkgrey;
+                }
+                .location {
+                  font-size: 1.2rem;
+                  display:block;
+                  color: $lightgrey;
+                }
 
             }
           }
+
+
+
+
+
       .view-btn{
         background: black;
         padding: 8px;
@@ -270,12 +290,10 @@
         width: 25%;
         display: inline-block;
         vertical-align: top;
-
+        padding:0 15px;
       }
 
       .col-md-9 {
         width: 75%;
         display:inline-block;
       }
-      }
-    }
