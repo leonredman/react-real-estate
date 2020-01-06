@@ -161,10 +161,13 @@
       }
 
       .address {
+        font-size: 1.3re;
+        text-transform: capitalize;
         position: absolute;
         bottom: 20px;
         opacity: 1;
         transition: all .4s ease-in-out;
+        text-shadow: 0 1px 4px rgba(91, 91, 91, 1);
       }
 
       .details {
