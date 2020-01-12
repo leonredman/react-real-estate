@@ -25,7 +25,10 @@ export default class Filter extends Component {
 						className="filters housetype"
 						onChange={this.props.change}
 					>
-						<option>Ranch</option>
+						<option value="Ranch">Ranch</option>
+						<option value="Apartment">Apartment</option>
+						<option value="Studio">Studio</option>
+						<option value="Room">Room</option>
 					</select>
 					<input type="text" name="max-price" className="max-price" />
 					<select
@@ -33,7 +36,10 @@ export default class Filter extends Component {
 						className="filters bedrooms"
 						onChange={this.props.change}
 					>
-						<option>2 BR</option>
+						<option value="1">1 BR</option>
+						<option value="2">2 BR</option>
+						<option value="3">3 BR</option>
+						<option value="4">4 BR</option>
 					</select>
 
 					<div className="filters price">
@@ -43,12 +49,14 @@ export default class Filter extends Component {
 							name="min-price"
 							className="min-price"
 							onChange={this.props.change}
+							value="0"
 						/>
 						<input
 							type="text"
 							name="max-price"
 							className="max-price"
 							onChange={this.props.change}
+							value="100000000"
 						/>
 					</div>
 					<div className="filters floor-space">
@@ -58,12 +66,14 @@ export default class Filter extends Component {
 							name="min-floor-space"
 							className="min-floor-space"
 							onChange={this.props.change}
+							value="0"
 						/>
 						<input
 							type="text"
 							name="max-floor-space"
 							className="max-floor-space"
 							onChange={this.props.change}
+							value="50000"
 						/>
 					</div>
 					<div className="filters extras">
