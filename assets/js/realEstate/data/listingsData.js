@@ -21,7 +21,7 @@ var listingsData = [
 		extras: ['elevator', 'gym'],
 		homeType: 'Condo',
 		image:
-			'https://www.adinahotels.com/wp-content/uploads/sites/4/2016/07/adina-melbourne-flinders-street-apartment-hotel-one-and-two-bedroom-apartment-2-2013.jpg'
+			'https://images1.apartments.com/i2/oHF6OJedl2MgePogztqhT5KOLOHWlwtQ_STVw0VQf4o/117/panther-riverside-parc-atlanta-ga-building-photo.jpg'
 	},
 	{
 		address: '1 president plaza',
@@ -57,7 +57,7 @@ var listingsData = [
 		extras: ['elevator', 'gym'],
 		homeType: 'Condo',
 		image:
-			'http://cdn.freshome.com/wp-content/uploads/2016/02/design-modern-apartment-1-1025x450.jpg'
+			'https://pix10.agoda.net/hotelImages/235414/-1/085ae6893737969841b0117728d7b072.jpg?s=1024x768'
 	},
 	{
 		address: '2 main st',
@@ -80,8 +80,7 @@ var listingsData = [
 		floorSpace: 2000,
 		extras: ['elevator', 'gym'],
 		homeType: 'Room',
-		image:
-			'http://www.carolinacouture.com/wood/wp-content/uploads/2014/09/apartment-contemporary-apartment-in-taiwan-by-fertility-design-and-mirror-glass-accent-stylish-and-elegant-apartment-designs-tiny-ass-apartment-design-ideas-apartment-interior.jpg'
+		image: 'https://r-cf.bstatic.com/images/hotel/max1024x768/139/139179779.jpg'
 	}
 ];
 
