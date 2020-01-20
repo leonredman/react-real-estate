@@ -23,7 +23,7 @@ class App extends Component {
 			gym: false,
 			swimming_pool: false,
 			filteredData: listingsData,
-			populateFormsData: ' '
+			populateFormsData: ''
 		};
 
 		this.change = this.change.bind(this);
@@ -37,15 +37,10 @@ class App extends Component {
 				? event.target.checked
 				: event.target.value;
 
-		this.setState(
-			{
-				[name]: value
-			},
-			() => {
-				console.log(this.state);
-				this.filteredData();
-			}
-		);
+		this.setState({ [name]: value }, () => {
+			console.log(this.state);
+			this.filteredData();
+		});
 	}
 
 	filteredData() {
@@ -119,7 +114,7 @@ class App extends Component {
 					<Filter
 						change={this.change}
 						globalState={this.state}
-						populateAction
+						populateAction={this.populateForms}
 					/>
 					<Listings listingsData={this.state.filteredData} />
 				</section>
