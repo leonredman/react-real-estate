@@ -54,7 +54,8 @@ export default class Header extends Component {
 						<div className="bottom-info">
 							<span className="price">${listing.price}</span>
 							<span className="location">
-								<i className="fa fa-map-marker" aria-hidden="true" />{' '}
+								<i className="fa fa-map-marker" aria-hidden="true" />
+								{''}
 								{listing.city},{listing.state}
 							</span>
 						</div>
