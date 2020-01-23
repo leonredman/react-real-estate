@@ -7,12 +7,14 @@ export default class Filter extends Component {
 			name: 'Leon'
 		};
 		this.cities = this.cities.bind(this);
+		this.homeTypes = this.homeTypes.bind(this);
+		this.bedrooms = this.bedrooms.bind(this);
 	}
 	componentWillMount() {
 		this.props.populateAction();
 	}
 	cities() {
-		if(this.props.globalState.populateFormsData.cities != undefined) {
+		if (this.props.globalState.populateFormsData.cities != undefined) {
 			var { cities } = this.props.globalState.populateFormsData;
 
 			console.log(cities);
@@ -26,10 +28,32 @@ export default class Filter extends Component {
 		}
 	}
 	homeTypes() {
+		if (this.props.globalState.populateFormsData.homeTypes != undefined) {
+			var { homeTypes } = this.props.globalState.populateFormsData;
 
+			console.log(homeTypes);
+			return homeTypes.map(item => {
+				return (
+					<option key={item} value={item}>
+						{item}
+					</option>
+				);
+			});
+		}
 	}
 	bedrooms() {
+		if (this.props.globalState.populateFormsData.bedrooms != undefined) {
+			var { bedrooms } = this.props.globalState.populateFormsData;
 
+			console.log(bedrooms);
+			return bedrooms.map(item => {
+				return (
+					<option key={item} value={item}>
+						{item}+ BR
+					</option>
+				);
+			});
+		}
 	}
 	render() {
 		return (
@@ -40,11 +64,10 @@ export default class Filter extends Component {
 					<select
 						name="city"
 						className="filters city"
-						onChange={this.props.change}>
+						onChange={this.props.change}
+					>
 						<option value="All">All</option>
 						{this.cities()}
-
-
 					</select>
 					<label htmlFor="city">Home Type</label>
 					<select
@@ -53,10 +76,7 @@ export default class Filter extends Component {
 						onChange={this.props.change}
 					>
 						<option value="All">All Homes</option>
-						<option value="Ranch">Ranch</option>
-						<option value="Apartment">Apartment</option>
-						<option value="Studio">Studio</option>
-						<option value="Room">Room</option>
+						{this.homeTypes()}
 					</select>
 
 					<label htmlFor="city">Bedrooms</label>
@@ -65,11 +85,7 @@ export default class Filter extends Component {
 						className="filters bedrooms"
 						onChange={this.props.change}
 					>
-						<option value="0">0+ BR</option>
-						<option value="1">1+ BR</option>
-						<option value="2">2+ BR</option>
-						<option value="3">3+ BR</option>
-						<option value="4">4+ BR</option>
+						{this.bedrooms()}
 					</select>
 
 					<div className="filters price">
