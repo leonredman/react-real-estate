@@ -9,13 +9,28 @@ export default class Header extends Component {
 	}
 	render() {
 		return (
+			// <header>
+			// <div> Logo </div>
+
+			// <nav>
+			// <a href="#">create ads</a>
+			// <a href="#">About Us</a>
+			// <a href="#">Log In</a>
+			// <a href="#" className="register-btn">
+			// Register
+			// </a>/
+
 			<header>
-				<div> Logo </div>
+				<div> Realty.com </div>
 
 				<nav>
-					<a href="#">create ads</a>
+					<a href="#">Home</a>
 					<a href="#">About Us</a>
-					<a href="#">Log In</a>
+					<a href="#">Featured Listings</a>
+					<a href="#">Home Evaluation</a>
+					<a href="#">For Sellers</a>
+					<a href="#">For Buyers</a>
+					<a href="#">Contact Us</a>
 					<a href="#" className="register-btn">
 						Register
 					</a>
