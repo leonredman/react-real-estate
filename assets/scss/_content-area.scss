@@ -285,6 +285,8 @@
   }
 
   #pagination {
+    width: 100%;
+    display: block;
     text-align: center;
 
     .pages {
@@ -309,14 +311,46 @@
     }
   }
 
-    .col-md-3{
-      width: 25%;
-      display: inline-block;
-      vertical-align: top;
-      padding:0 15px;
-    }
+    // .col-md-3{
+    //   width: 25%;
+    //   display: inline-block;
+    //   vertical-align: top;
+    //   padding:0 15px;
+    // }
+    //
+    // .col-md-9 {
+    //   width: 75%;
+    //   display:inline-block;
+    // }
+    //
+    // .col-lg-6{
+    //   width: 50%;
+    //   display: inline-block;
+    //   vertical-align: top;
+    //   padding:0 15px;
+    // }
 
-    .col-md-9 {
-      width: 75%;
-      display:inline-block;
+    .home-container {
+      background-image: linear-gradient(135deg, rgba(69,72,77,.5) 0%, rgba(0,0,0,.5) 100%), url("https://img1.wsimg.com/isteam/stock/Y8zdjzq/:/fm=f:Y8zdjzq");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      min-height: 100vh;
+
+
+      h1{
+      color:white;
+      font-size:60px;
+      font-weight: bold;
+      margin-left:35%;
+      padding-top:20%;
+      }
+
+      h4{
+        color:white;
+        font-size:30px;
+        margin-left:35%;
+        padding-top:0%;
+
+      }
     }
