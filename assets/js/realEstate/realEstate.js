@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Header from './Header.js';
+import Footer from './Footer.js';
 import Filter from './Filter.js';
 import Listings from './Listings.js';
 import listingsData from './data/listingsData.js';
+import Home from './Home.js';
 
 class App extends Component {
 	constructor() {
@@ -157,22 +160,27 @@ class App extends Component {
 
 	render() {
 		return (
-			<div>
-				<Header />
-				<section id="content-area">
-					<Filter
-						change={this.change}
-						globalState={this.state}
-						populateAction={this.populateForms}
-					/>
-					<Listings
-						listingsData={this.state.filteredData}
-						change={this.change}
-						globalState={this.state}
-						changeView={this.changeView}
-					/>
-				</section>
-			</div>
+			<Router>
+				<div>
+					<Header />
+					<Route exact path="/" component={Home} />
+
+					<section id="content-area">
+						<Filter
+							change={this.change}
+							globalState={this.state}
+							populateAction={this.populateForms}
+						/>
+						<Listings
+							listingsData={this.state.filteredData}
+							change={this.change}
+							globalState={this.state}
+							changeView={this.changeView}
+						/>
+					</section>
+					<Route exact path="/" component={Footer} />
+				</div>
+			</Router>
 		);
 	}
 }
