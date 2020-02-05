@@ -26,7 +26,7 @@ export default class Header extends Component {
 				<nav>
 					<a href="#">Home</a>
 					<a href="#">About Us</a>
-					<a href="#">Featured Listings</a>
+					<a href="#">Listings</a>
 					<a href="#">Home Evaluation</a>
 					<a href="#">For Sellers</a>
 					<a href="#">For Buyers</a>
