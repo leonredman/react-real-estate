@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Header from './Header.js';
 import Home from './Home.js';
+import About from './About.js';
 import realEstate from './realEstate.js';
 
 export default class App extends Component {
@@ -18,8 +19,9 @@ export default class App extends Component {
 			<Router>
 				<div>
 					<Header />
-					<Route path="/realEstate" component={realEstate} />
-					<Route path="/home.js" component={Home} />
+					<Route exact path="/" component={Home} />
+					<Route exact path="/realEstate.js" component={realEstate} />
+					<Route exact path="/About.js" component={About} />
 				</div>
 			</Router>
 		);
