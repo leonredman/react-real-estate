@@ -21,12 +21,12 @@ export default class Header extends Component {
 			// </a>/
 
 			<header>
-				<div> Realty.com </div>
+				<div> REALTY.COM </div>
 
 				<nav>
-					<a href="#">Home</a>
-					<a href="#">About Us</a>
-					<a href="#">Listings</a>
+					<a href="/">Home</a>
+					<a href="/About.js">About</a>
+					<a href="/realEstate.js">Listings</a>
 					<a href="#">Home Evaluation</a>
 					<a href="#">For Sellers</a>
 					<a href="#">For Buyers</a>
