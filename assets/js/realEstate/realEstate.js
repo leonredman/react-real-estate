@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Header from './Header.js';
-import Footer from './Footer.js';
 import Filter from './Filter.js';
 import Listings from './Listings.js';
 import listingsData from './data/listingsData.js';
-import Home from './Home.js';
 
-class App extends Component {
+export default class realEstate extends Component {
+	//class App extends Component {
 	constructor() {
 		super();
 		this.state = {
@@ -100,6 +97,35 @@ class App extends Component {
 			});
 		}
 
+		if (this.state.swimming_pool != false) {
+			newData = newData.filter(item => {
+				return (
+					item.extras.includes('swimming_pool') == this.state.swimming_pool
+				);
+			});
+		}
+
+		if (this.state.elevator != false) {
+			newData = newData.filter(item => {
+				return item.extras.includes('elevator') == this.state.elevator;
+			});
+		}
+
+		if (this.state.finished_basement != false) {
+			newData = newData.filter(item => {
+				return (
+					item.extras.includes('finished_basement') ==
+					this.state.finished_basement
+				);
+			});
+		}
+
+		if (this.state.gym != false) {
+			newData = newData.filter(item => {
+				return item.extras.includes('gym') == this.state.gym;
+			});
+		}
+
 		if (this.state.search != '') {
 			newData = newData.filter(item => {
 				var city = item.city.toLowerCase();
@@ -160,31 +186,21 @@ class App extends Component {
 
 	render() {
 		return (
-			<Router>
-				<div>
-					<Header />
-					<Route exact path="/" component={Home} />
-
-					<section id="content-area">
-						<Filter
-							change={this.change}
-							globalState={this.state}
-							populateAction={this.populateForms}
-						/>
-						<Listings
-							listingsData={this.state.filteredData}
-							change={this.change}
-							globalState={this.state}
-							changeView={this.changeView}
-						/>
-					</section>
-					<Route exact path="/" component={Footer} />
-				</div>
-			</Router>
+			<div>
+				<section id="content-area">
+					<Filter
+						change={this.change}
+						globalState={this.state}
+						populateAction={this.populateForms}
+					/>
+					<Listings
+						listingsData={this.state.filteredData}
+						change={this.change}
+						globalState={this.state}
+						changeView={this.changeView}
+					/>
+				</section>
+			</div>
 		);
 	}
 }
-
-const app = document.getElementById('app');
-
-ReactDOM.render(<App />, app);
