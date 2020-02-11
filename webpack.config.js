@@ -16,12 +16,13 @@ compress.unused = true;
 module.exports = env => {
 	return {
 		entry: {
-			realEstate: './assets/js/realEstate/realEstate.js',
+			realEstate: './assets/js/realEstate/App.js',
 			// main: './assets/js/main.js'
 		},
 		output: {
 			path: path.resolve(__dirname, 'public/js/dist'),
 			filename: '[name].js' // '[name].[chunkhash].js' put this if you want to get hashed files to cache bust
+
 		},
 		module: {
 			rules: [
