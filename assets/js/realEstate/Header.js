@@ -21,7 +21,7 @@ export default class Header extends Component {
 			// </a>/
 
 			<header>
-				<div> REALTY.COM </div>
+				<div>REALTY.COM</div>
 
 				<nav>
 					<a href="/">Home</a>
