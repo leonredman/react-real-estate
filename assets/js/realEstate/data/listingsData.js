@@ -30,7 +30,7 @@ var listingsData = [
 		rooms: 1,
 		price: 345355,
 		floorSpace: 2400,
-		extras: ['elevator', 'gym'],
+		extras: ['finished_basement'],
 		homeType: 'Single Home',
 		image:
 			'https://c.o0bg.com/rf/image_960w/Boston/2011-2020/2017/01/09/BostonGlobe.com/Lifestyle/Images/doherty_10names04_liv.jpg'
@@ -42,7 +42,7 @@ var listingsData = [
 		rooms: 0,
 		price: 80000,
 		floorSpace: 1000,
-		extras: ['elevator', 'gym'],
+		extras: ['gym'],
 		homeType: 'Studio',
 		image:
 			'http://media.equityapartments.com/images/q_50/f_auto/fl_lossy/685-28/oak-park-apartment-homes-kitchen'
@@ -54,7 +54,7 @@ var listingsData = [
 		rooms: 3,
 		price: 603000,
 		floorSpace: 3000,
-		extras: ['elevator', 'gym'],
+		extras: ['elevator'],
 		homeType: 'Condo',
 		image:
 			'https://pix10.agoda.net/hotelImages/235414/-1/085ae6893737969841b0117728d7b072.jpg?s=1024x768'
@@ -66,7 +66,7 @@ var listingsData = [
 		rooms: 2,
 		price: 220000,
 		floorSpace: 2000,
-		extras: ['elevator', 'pool'],
+		extras: ['swimming_pool'],
 		homeType: 'Multi Home',
 		image:
 			'http://www.theproserve.com/wp-content/uploads/2013/03/apartment-complex-insurance.jpg'
@@ -78,7 +78,7 @@ var listingsData = [
 		rooms: 1,
 		price: 150000,
 		floorSpace: 2000,
-		extras: ['elevator', 'gym'],
+		extras: ['gym'],
 		homeType: 'Room',
 		image: 'https://r-cf.bstatic.com/images/hotel/max1024x768/139/139179779.jpg'
 	}
