@@ -13,7 +13,6 @@ export default class About extends Component {
 			<div className="about">
 				<div className="about-container">
 					<h2>
-						{' '}
 						Work With an Experienced <br />
 						Real Estate Broker
 					</h2>
