@@ -14,7 +14,7 @@ export default class About extends Component {
 				<div className="about-container">
 					<h2>
 						Work With an Experienced <br />
-						Real Estate Broker
+						Real Estate Broker Today
 					</h2>
 					<h4>We are here to help you!</h4>
 				</div>
