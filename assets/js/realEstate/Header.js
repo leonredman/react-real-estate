@@ -27,7 +27,7 @@ export default class Header extends Component {
 					<a href="/">Home</a>
 					<a href="/About.js">About</a>
 					<a href="/realEstate.js">Listings</a>
-					<a href="#">Home Evaluation</a>
+					<a href="/HomeEvaluation.js">Home-Evaluation</a>
 					<a href="#">For Sellers</a>
 					<a href="#">For Buyers</a>
 					<a href="#">Contact Us</a>
