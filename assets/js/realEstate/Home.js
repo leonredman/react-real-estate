@@ -13,7 +13,7 @@ export default class Home extends Component {
 			<div className="home">
 				<div className="home-container">
 					<h1> REIMAGINED HOME </h1>
-					<h4> We’ll help you find a place you’ll love.</h4>
+					<h4> We’ll help you find A place you’ll love.</h4>
 					<div className="searchcontainer">
 						<div className="searchbar">
 							<label>
