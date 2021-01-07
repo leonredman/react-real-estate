@@ -179,7 +179,7 @@
         top:0;
         Bottom:0;
         left:0;
-        righ: 0;
+        right: 0;
         -webkit-border-top-left-radius: 5px;
         -webkit-border-top-right-radius: 5px;
         -moz-border-radius-topleft: 5px;
@@ -441,5 +441,12 @@
       }
 
     }
+
+  }
+
+  .home-eval {
+    color: black;
+      
+      min-height: 90vh;
 
   }
